@@ -288,9 +288,11 @@ export const fetchEmployeeIDSBySchoolName = (_SchoolName) =>
 
         _SchoolName = _SchoolName.replace("&", "");
         var serviceUrl = "";
-        serviceUrl = Config.REST_URL + 'api/Crosswalk/fetchEmployeeDataBySchoolName/'
+        serviceUrl = Config.REST_URL + '/api/employeetable/fetchEmployeeDataBySchoolName/'
         serviceUrl += _SchoolName;
 
+        //console.log(serviceUrl)
+        // return []
         const config = {
                 headers: {
                     'Content-Type': 'application/json'

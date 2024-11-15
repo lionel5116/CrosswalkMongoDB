@@ -49,7 +49,7 @@ const [btnAssignDisable,setBtnAssignDisable] = useState(true)
                 new Option("--Select--");
               for (const key in _POSITION_DATA) {
                 _DDPositionSelect.options[_DDPositionSelect.options.length] =
-                  new Option(_POSITION_DATA[key].Position);
+                  new Option(_POSITION_DATA[key].PositionName);
               }
             } else {
             }
