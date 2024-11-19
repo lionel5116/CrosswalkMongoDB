@@ -159,9 +159,15 @@ const [btnAssignDisable,setBtnAssignDisable] = useState(true)
 
               <Col sm={6}>
                
-               <Form.Label
+              <Form.Label
                 style={{width:'150px'}}
-               >* Certification Info</Form.Label>
+               >Certification Info</Form.Label>
+                 <input
+                  id={props.Position}
+                  style={styles.modalInputSyle.empIDTextField}
+                  value={props.Certification}
+                  readOnly
+                ></input>
              
              </Col>
             </Row>
@@ -179,10 +185,15 @@ const [btnAssignDisable,setBtnAssignDisable] = useState(true)
               </Col>
               <Col sm={6}>
                
-               <Form.Label
+              <Form.Label
                 style={{width:'150px'}}
-               >* Eligilbity Ino</Form.Label>
-             
+               >Eligibility</Form.Label>
+                <input
+                  id={props.Position}
+                  style={styles.modalInputSyle.empIDTextField}
+                  value={props.Eligibility}
+                  readOnly
+                ></input>
              </Col>
             </Row>
 

@@ -26,6 +26,8 @@ const NavbarMain = () => {
               <Nav.Link href="#/Dashboard">Home</Nav.Link>
 
               <Nav.Link href="#/CrossWalkNewDesign">Crosswalk Staff</Nav.Link>
+              <Nav.Link href="#/CrossWalkNewDesignWorking">Crosswalk Staff Working</Nav.Link>
+              
               <Nav.Link href="#">24-25 APR</Nav.Link>
 
              

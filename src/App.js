@@ -8,9 +8,8 @@ import Crose from "./components/CROSE/Crose";
 import VendorExport from "./components/CROSE/VendorExport";
 
 import CrossWalk from "./components/CROSSWALK/CrossWalk";
-import CrossWalkScreen2 from "./components/CROSSWALK/CrossWalkScreen2";
-import CrossWalkScreen3 from "./components/CROSSWALK/CrossWalkScreen3";
 import CrossWalkNewDesign from "./components/CROSSWALK/CrossWalkNewDesign";
+import CrossWalkNewDesignWorking from "./components/CROSSWALK/CrossWalkNewDesignWorking";
 import Dashboard from "./components/CROSSWALK/Dashboard";
 //import MainPage from "./components/MainPage/MainPage";
 
@@ -34,9 +33,9 @@ function App() {
           <Route path="/" element={<Dashboard />}></Route>
             <Route path="/CrossWalk" element={<CrossWalk />}></Route>
             
-            <Route path="/CrossWalkScreen2" element={<CrossWalkScreen2 />}></Route>
-            <Route path="/CrossWalkScreen3" element={<CrossWalkScreen3 />}></Route>
+            
             <Route path="/CrossWalkNewDesign" element={<CrossWalkNewDesign />}></Route>
+            <Route path="/CrossWalkNewDesignWorking" element={<CrossWalkNewDesignWorking />}></Route>
             <Route path="/Dashboard" element={<Dashboard />}></Route>
             
             <Route path="/Crose" element={<Crose />}></Route>

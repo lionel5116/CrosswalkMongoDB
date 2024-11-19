@@ -327,7 +327,42 @@ export const fetchEmployeeIDSBySchoolName = (_SchoolName) =>
                 );;
             }      
 };
-
+export const fetchAllEmployeeDataBySchoolName = (_SchoolName) =>
+    async (dispatch) => {
+        _SchoolName = _SchoolName.replace("&", "");
+        var serviceUrl = "";
+        serviceUrl = Config.REST_URL + 'api/Crosswalk/fetchAllEmployeeDataBySchoolName/'
+        serviceUrl += _SchoolName;
+        const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            try {
+                const res = await axios.get(serviceUrl,config);
+                //console.log(res.status)
+                if (res.status === 200) {
+                    return res.data
+                 }
+                 else if (res.status === 400) {
+                     dispatch(
+                         setAlert(
+                             "No Employees found for selected school.. based on bad request 400",
+                             "warning"
+                         )
+                     );
+                     return []
+                 }
+            } catch (error) {
+                console.log(error.message)
+                dispatch(
+                    setAlert(
+                        "No EmployeeIDs found for selected school",
+                        "warning"
+                    )
+                );;
+            }
+};
 export const UpdateCrosswalkRecord = (formData) =>
     async (dispatch) => { 
 

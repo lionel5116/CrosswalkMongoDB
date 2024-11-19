@@ -22,6 +22,20 @@ async  fetchSchoolListings(){
     
     }
 
+    async  fetchAllPositions(){
+        var url = Config.REST_URL + '/api/position/fetchPositions/'
+        return await axios.get(url)
+        .then(res => {
+            return res.data;
+        });
+    }
+    async  AssignedPositions(){
+        var url = Config.REST_URL + '/api/position/fetchPositions/'
+        return await axios.get(url)
+        .then(res => {
+            return res.data;
+        });
+    }
 
     async  fetchEmployeeIDs(){
         var url = Config.REST_URL + '/api/Crosswalk/fetchEmployeeIDs/'
