@@ -1,3 +1,11 @@
+/*
+git add -A
+git add .
+git commit -m "first commit for mongoDB version"
+
+ 
+*/
+
 import React, { useState,useLayoutEffect} from 'react';
 import Col from "react-bootstrap/Col";
 import Form from 'react-bootstrap/Form';
